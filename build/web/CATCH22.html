@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <HEAD>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+h1
+{
+text-align:center;
+}
+td:hover
+{
+background-color:#d98cb3;
+}
+body
+{
+background-image: url("back.jpg");
+background-repeat: no-repeat;
+ background-size: cover;
+background-attachment: scroll;
+}
+a:link {
+    color: red;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: hotpink;
+}
+a:active {
+    color: blue;
+}
+#img11{
+    margin-left: 14vw;
+    margin-top: 4vw;
+    margin-bottom: 3vw;
+    width: 15vw;
+    height: 10vw;
+    display: inline-block;
+    float: left;
+}
+</style>
+<script>
+	 var b=0;   
+	 function update_value(chk_bx){
+		      if(chk_bx.checked)
+		         {
+		             var a="checked";
+		 	   b+=1;
+		 }
+		         else{
+		             var a="not checked";
+		 		if(b>0){
+		 			b-=1;
+		 		}else if(b==0){
+		 			b=0;
+		 		}
+		         }
+		      if (b==0)
+		    	  {
+			         document.getElementById('wish').innerHTML ='Cart : Empty';
+
+		    	  }else{
+		         document.getElementById('wish').innerHTML ='Cart : '+b+'';
+		    	  }
+		     }
+	 
+	 
+
+		 </script>
+    </head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">SWIGGY CLONE!</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">HOME</a></li>
+      <li><a><div id="wish">CART : Empty</div></a></li>
+      <li><a href="aboutus.html">ABOUT US</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a class="btnbtn-info" data-toggle="collapse" data-target="#LI" href="LOGIN.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<div id="LI" class="collapse">
+<nav class="navbarnavbar-default">
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand" href="#"><IFRAME SRC='LI.HTML' WIDTH ='1366' HEIGHT ='450'></IFRAME></a>
+</div>
+</div>
+</nav>
+</div>
+<div style="width:100%;background-color: #171A29; height: 18vw;margin-left: 0;">
+<img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/gqeaglwujdydovwwibwo" id="img11">
+<div style="display: inline-block;margin-top: 5vw;color: white;margin-left:5vw;font-size: 3vw;">CATCH 22</div><br><div style="font-size: 1vw;color: white;margin-left: 5vw;display: inline-block;margin-top: 0.3vw;">Sector 22 | East Chd</div><br><div style="font-size: 1vw;color: white;margin-left: 5vw;display: inline-block;margin-top: 0.3vw;">North Indian,fast food bakery</div><br><div style="font-size: 1.0vw;color: white;margin-left: 5vw;display: inline-block;margin-top: 0.8vw;">Rating 4.2 | 30mins | Rs270</div><br><div style="font-size: 0.6vw;color: white;margin-left: 5vw;display: inline-block;margin-top: 0.3vw;">1000+Ratings | Delivery Time | Cost for two</div>` ` `
+</div>
+<HR>
+<CENTER><TABLE style=" margin-left:15vw;" cellspacing="35px;">
+<TR>
+<TH COLSPAN="8"><FONT COLOR="BLACK" SIZE="8">Recommended</FONT></TH>
+</TR>
+<TR style="width:50vw;">
+<TD><CENTER><IMG SRC="images/a.jpg" style="border: GREY 1px solid; width: 300px;height: 200px;"><BR><FONT COLOR="BLACK" SIZE="2"> ALOO TIKKI</FONT><BR><FONT COLOR="GREY" SIZE="0.5">RS.24</FONT></CENTER><button type="button" style="background:transparent;color: orangered;border: solid 1px;">ADD</button><input  type="checkbox" name="chk1" value="1" onchange="update_value(this);"></div></TD>
+<TD><CENTER><IMG SRC="images/b.jpg" style="border: GREY 1px solid; width: 300px;height: 200px;"><BR><FONT COLOR="BLACK" SIZE="2">BHALL PAPDI</FONT><BR><FONT COLOR="GREY" SIZE="0.5">RS.20</FONT></CENTER><button type="button" style="background:transparent;color: orangered;border: solid 1px;">ADD</button><input  type="checkbox" name="chk1" value="1" onchange="update_value(this);"></div></TD>
+<tr><TD><CENTER><IMG SRC="images/c.jpg" style="border: GREY 1px solid; width: 300px;height: 200px;"><BR><FONT COLOR="BLACK" SIZE="2">GOLGAPPE</FONT><BR><FONT COLOR="GREY" SIZE="0.5">RS.30</FONT></CENTER><button type="button" style="background:transparent;color: orangered;border: solid 1px;">ADD</button><input  type="checkbox" name="chk1" value="1" onchange="update_value(this);"></div></TD>
+<TD><CENTER><IMG SRC="images/d.jpg" style="border: GREY 1px solid; width: 300px;height: 200px;"><BR><FONT COLOR="BLACK" SIZE="2">PANIPURI SUJI</FONT><BR><FONT COLOR="GREY" SIZE="0.5">RS.55</FONT></CENTER><button type="button" style="background:transparent;color: orangered;border: solid 1px;">ADD</button><input  type="checkbox" name="chk1" value="1" onchange="update_value(this);"></div></TD>
+<tr><TD><CENTER><IMG SRC="images/e.jpg" style="border: GREY 1px solid; width: 300px;height: 200px;"><BR><FONT COLOR="BLACK" SIZE="2" >CHANNA BHATURA</FONT><BR><FONT COLOR="GREY" SIZE="0.5">RS.120</FONT></CENTER><button type="button" style="background:transparent;color: orangered;border: solid 1px;">ADD</button><input  type="checkbox" name="chk1" value="1" onchange="update_value(this);"></div></TD>
+<TD><CENTER><IMG SRC="images/f.jpg" style="border: GREY 1px solid; width: 300px;height: 200px;"><BR><FONT COLOR="BLACK" SIZE="2">SPAV BHAJI </FONT><BR><FONT COLOR="GREY" SIZE="0.5">RS.240</FONT></CENTER><button type="button" style="background:transparent;color: orangered;border: solid 1px;">ADD</button><input  type="checkbox" name="chk1" value="1" onchange="update_value(this);"></div></TD>
+<tr><TD><CENTER><IMG SRC="images/g.jpg" style="border: GREY 1px solid; width: 300px;height: 200px;"><BR><FONT COLOR="BLACK" SIZE="2">SWEET CORN</FONT><BR><FONT COLOR="GREY" SIZE="0.5">RS.200</FONT></CENTER><button type="button" style="background:transparent;color: orangered;border: solid 1px;">ADD</button><input  type="checkbox" name="chk1" value="1" onchange="update_value(this);"></div></TD>
+</TR>
+</TABLE></CENTER>
+
+</body>
+</html>
